@@ -1,0 +1,44 @@
+{
+  "name": "insomnia-plugin-oauth-code-challenge",
+  "version": "1.0.0",
+  "description": "This is an Insomnia plugin to generate an OAuth 2 PKCE (Proof Key for Code Exchange) code challenge and code verifier",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "scripts": {
+    "prepublish": "tsc",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manjulaperera/insomnia-plugin-oauth-code-challenge.git"
+  },
+  "keywords": [
+    "PKCE",
+    "OAuth2",
+    "Code Challenge",
+    "Code Verifier",
+    "Insomnia"
+  ],
+  "author": "Manjula Perera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manjulaperera/insomnia-plugin-oauth-code-challenge/issues"
+  },
+  "homepage": "https://github.com/manjulaperera/insomnia-plugin-oauth-code-challenge#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "typescript": "^4.5.5"
+  },
+  "insomnia": {
+    "name": "Oath 2 code challenge and code verifier generator",
+    "description": "This helps to generate an OAuth 2 PKCE code challenge and code verifier",
+    "images": {
+      "icon": "icon.svg",
+      "cover": "cover.svg"
+    }
+  },
+  "dependencies": {
+    "base64-arraybuffer": "^1.0.2",
+    "typescript": "^4.3.5"
+  }
+}

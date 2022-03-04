@@ -1,0 +1,14 @@
+{
+  "exclude": ["**/*.test.ts", "test", "dist"],
+  "compilerOptions": {
+    "declaration": true,
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "rootDir": "src",
+  }
+}
