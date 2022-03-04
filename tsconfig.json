@@ -1,14 +1,21 @@
 {
-  "exclude": ["**/*.test.ts", "test", "dist"],
+  "exclude": ["**/*.spec.ts", "dist"],
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true,
+    "compilerOptions": {
+      "module": "ESNext"
+    }
+  },
   "compilerOptions": {
     "declaration": true,
-    "target": "esnext",
-    "module": "esnext",
+    "target": "ES2019",
+    "module": "CommonJS",
     "strict": true,
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "outDir": "dist",
+    "outDir": "./dist",
     "rootDir": "src",
   }
 }
